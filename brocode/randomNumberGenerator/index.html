@@ -9,11 +9,17 @@
 
   <body>
     <label id="num">-</label>
-    <div id="btncontainer">
-      <button id="btn1" class="buttons">Generate</button>
+    <div id="btnHolder">
+      <div id="labels">
+        <label for="min">Min</label>
+        <input type="num" id="min" class="numlabel" value=" 1" />
+        <label for="max">Max</label>
+        <input type="num" id="max" class="numlabel" value="10" />
+      </div>
+      <div id="subbtm">
+        <button id="submit">Submit</button>
+      </div>
     </div>
-    <div id="msgholder"><label id="msg"></label></div>
-
     <script src="script.js"></script>
   </body>
 </html>
