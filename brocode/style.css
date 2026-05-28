@@ -1,0 +1,21 @@
+#count {
+  font-size: 10em;
+  display: block;
+  text-align: center;
+  font-family: Helvetica;
+}
+#btncontainer {
+  text-align: center;
+}
+.buttons {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgb(252, 131, 246);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.buttons:hover {
+  background-color: rgb(255, 25, 244);
+}
