@@ -1,6 +1,71 @@
-#clock {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f172a;
+}
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: rgba(100, 149, 237, 0.3);
+  filter: blur(60px);
+  transition:
+    left 0.08s linear,
+    top 0.08s linear;
+  transform: translate(-50%, -50%);
+}
+.clock-card {
   display: grid;
   place-items: center;
-  border: 3px solid;
-  margin: 25% 25% 0 25%;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#timeString {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+#date {
+  padding-top: 1rem;
+  color: #cbd5e1;
+  font-size: 2rem;
+}
+
+#btn12,
+#btn24 {
+  margin-top: 1rem;
+  padding: 0.9rem 1.2rem;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn12:hover,
+#btn24:hover {
+  transform: translateY(-2px);
 }

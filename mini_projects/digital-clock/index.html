@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+  <div class="cursor-glow"></div>
   <body>
-    <div id="clock">00:00:00</div>
+    <div class="clock-card">
+      <p id="timeString">00:00:00</p>
+      <div id="formatbtn">
+        <button id="btn12">12hr</button>
+        <button id="btn24">24hr</button>
+      </div>
+      <div><p id="date">-</p></div>
+    </div>
   </body>
 </html>
