@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 0% 25% 0% 25%;
   min-height: 100vh;
 
   display: flex;
