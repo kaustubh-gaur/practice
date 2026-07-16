@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pokename {
+  margin-top: 50px;
+  width: clamp(200px, 20vw, 400px);
+  height: 5vh;
+  border: 3px solid purple;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#pokename::placeholder {
+  color: #b1aeae;
+  font-style: italic;
+}
+
+#search {
+  height: 4vh;
+  width: clamp(100px, 10vw, 200px);
+  border-radius: 8px;
+  font-size: 15px;
+  color: white;
+  font-family: "Cascadia Mono", Courier, monospace;
+  font-weight: bold;
+  background-color: hsl(280, 100%, 70%);
+  transition: 0.1s;
+}
+#search:hover {
+  background-color: hsl(280, 100%, 50%);
+}
+#search:active {
+  animation: jiggle 0.5s;
+}
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-3deg);
+  }
+}
+#poketag {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#pokeimg {
+  height: 30vh;
+  width: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
