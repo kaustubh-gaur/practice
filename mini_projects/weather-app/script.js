@@ -17,7 +17,7 @@ cityInput.addEventListener("keydown", (event) => {
 
 //search function
 
-function searchWeather() {
+async function searchWeather() {
   const inputText = cityInput.value.trim();
 
   const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${inputText}&limit=1&appid=${apikey}`;
@@ -26,6 +26,10 @@ function searchWeather() {
     errormsg.classList.remove("hidden");
   } else {
     errormsg.classList.add("hidden");
+    const response = await fetch(geoUrl);
+    await response.json();
+    console.log(response);
     console.log(inputText);
+    console.log(geoUrl);
   }
 }
